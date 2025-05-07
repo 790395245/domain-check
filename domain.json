@@ -1,11 +1,17 @@
 [
   { "domain": "ruoruo.com" },
   { "domain": "ruo.com" },
+  { "domain": "r-z.com" },
   { "domain": "zxz.com" },
   { "domain": "970115.xyz" },
   { "domain": "970115.com"},
-  { "domain": "chen.ge", "registrationDate": "2022-07-11", "expirationDate": "2025-07-12", "system": "globalr", "systemURL": "https://dash.domain.digitalplat.org" },
   { "domain": "ruoruo.cn"},
   { "domain": "ruo.cn" },
-  { "domain": "z.xz.cn", "registrationDate": "2010-06-17", "expirationDate": "2025-06-17", "system": "阿里云计算有限公司（万网）", "systemURL": "https://dash.domain.digitalplat.org" }
+  { "domain": "z.xz.cn", "registrationDate": "2010-06-17", "expirationDate": "2025-06-17", "system": "阿里云计算有限公司（万网）", "systemURL": "https://dash.domain.digitalplat.org" },
+  { "domain": "已购域名"},
+  { "domain": "chen.ge.", "registrationDate": "2022-07-11", "expirationDate": "2025-07-12", "system": "globalr", "systemURL": "https://dash.domain.digitalplat.org" },
+  { "domain": "970415.xyz"},
+  { "domain": "rz01.com"},
+  { "domain": "ruoruo.icu"},
+  { "domain": "rz15.cn"}
 ]
