@@ -50,12 +50,19 @@ function extractWhoisData(html) {
   // const formattedNameServers = [...new Set(nameServers.map(ns => 
   //     ns.replace(/Name Server:\s*/i, '').replace(/\s+/g, ' ').trim().toLowerCase()
   // ))];
+  // 如果没有匹配到 Creation Date，尝试匹配 Registration Time
+  const registrationTimeMatch = !creationDateMatch && html.match(/Registration Time:\s*([^\n]+)/i);
+  const finalCreationDate = creationDateMatch || (registrationTimeMatch ? registrationTimeMatch[1].trim() : null);
+
+  // 如果没有匹配到 Expiry Date，尝试匹配 Expiration Time
+  const expirationTimeMatch = !expiryDateMatch && html.match(/Expiration Time:\s*([^\n]+)/i)?.[1]?.trim();
+  const finalExpiryDate = expiryDateMatch || (expirationTimeMatch ? expirationTimeMatch : null);
 
   return {
     domain: domainName,
-    creationDate: creationDateMatch,
+    creationDate: finalCreationDate,
     updatedDate: updatedDateMatch,
-    expiryDate: expiryDateMatch,
+    expiryDate: finalExpiryDate,
     registrar: registrarMatch,
     registrarUrl: registrarUrlMatch,
     nameServers: formattedNameServers,
